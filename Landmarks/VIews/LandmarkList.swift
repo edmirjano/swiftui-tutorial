@@ -15,7 +15,7 @@ struct LandmarkList: View {
                         LandmarkRow(landmark: land)
                 }
             }
-        .navigationTitle("Landmarks")
+        .navigationTitle("Landmarks and pandas")
         }
     }
 }
