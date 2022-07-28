@@ -8,22 +8,31 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    @EnvironmentObject var modelData: ModelData
     var land: Landmark
+    
+    var landmarkIndex: Int {
+        modelData.landmarks.firstIndex(where: { $0.id == land.id })!
+    }
     
     var body: some View {
         ScrollView {
             MapView(coordinate: land.locationCoordinate)
-                .frame(height: 300)
+                .frame(height: 400)
                 .ignoresSafeArea(edges: .top)
             CircleImage(image: land.image)
-                .offset(y: -80)
+                .offset(y: -125)
                 .padding(.bottom, -80)
             VStack(alignment: .leading) {
-                Text(land.name)
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .padding(.bottom)
-                .foregroundColor(Color(hue: 1.0, saturation: 0.568, brightness: 0.195))
+                HStack {
+                    Text(land.name)
+                        .font(.title)
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .padding(.bottom)
+                        .foregroundColor(Color(hue: 1.0, saturation: 0.568, brightness: 0.195))
+                    FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+                }
                 HStack {
                     Text(land.park)
                         .font(.title2)
@@ -45,6 +54,6 @@ struct LandmarkDetail: View {
 
 struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkDetail(land: landmarks[0])
+        LandmarkDetail(land: ModelData().landmarks[0])
     }
 }

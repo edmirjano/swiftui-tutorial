@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35A9A5312892AB1400BEA322 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A9A5302892AB1400BEA322 /* FavoriteButton.swift */; };
 		44C709DC2725ACA500DCACC7 /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C709DB2725ACA500DCACC7 /* LandmarksApp.swift */; };
 		44C709DE2725ACA500DCACC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C709DD2725ACA500DCACC7 /* ContentView.swift */; };
 		44C709E02725ACA800DCACC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44C709DF2725ACA800DCACC7 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35A9A5302892AB1400BEA322 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		44C709D82725ACA500DCACC7 /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44C709DB2725ACA500DCACC7 /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
 		44C709DD2725ACA500DCACC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				44C709F92725BFB000DCACC7 /* LandmarkRow.swift */,
 				44C709FB2725C26300DCACC7 /* LandmarkList.swift */,
 				44C709FD2725C3D400DCACC7 /* LandmarkDetail.swift */,
+				35A9A5302892AB1400BEA322 /* FavoriteButton.swift */,
 			);
 			path = VIews;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				44C709DE2725ACA500DCACC7 /* ContentView.swift in Sources */,
 				44C709EC2725B73B00DCACC7 /* MapView.swift in Sources */,
 				44C709DC2725ACA500DCACC7 /* LandmarksApp.swift in Sources */,
+				35A9A5312892AB1400BEA322 /* FavoriteButton.swift in Sources */,
 				44C709FC2725C26300DCACC7 /* LandmarkList.swift in Sources */,
 				44C709FE2725C3D400DCACC7 /* LandmarkDetail.swift in Sources */,
 				44C709EA2725B5BB00DCACC7 /* CircleImage.swift in Sources */,
@@ -329,7 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Landmarks/Preview Content\"";
-				DEVELOPMENT_TEAM = XBP4SXRNFT;
+				DEVELOPMENT_TEAM = Q2NF5TNR3A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -359,7 +363,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Landmarks/Preview Content\"";
-				DEVELOPMENT_TEAM = XBP4SXRNFT;
+				DEVELOPMENT_TEAM = Q2NF5TNR3A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
