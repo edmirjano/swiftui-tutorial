@@ -13,8 +13,11 @@ struct LandmarksApp: App {
 
     var body: some Scene {
         WindowGroup {
-            LandmarkList()
-                .environmentObject(modelData)
+            HikeView(hike: ModelData().hikes[0])
+                .padding()
+//            Badge()
+//            LandmarkList()
+//                .environmentObject(modelData)
         }
     }
 }
